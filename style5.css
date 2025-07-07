@@ -6,7 +6,6 @@
   box-sizing: border-box;
   font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
 header {
   background-color: rgb(10, 10, 10);
   color: white;
@@ -21,23 +20,21 @@ header img {
   max-width: 150px;
   height: auto;
 }
-
 nav ul {
   list-style: none;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  width: 800px;
+  padding-top: 35px;
   gap: 15px;
-  padding-top: 20px;
 }
 
 nav ul li a {
   text-decoration: none;
   color: white;
   font-weight: bold;
-  padding: 5px 10px;
 }
-
 .never {
   background: linear-gradient(to bottom, rgb(10, 10, 10), rgba(36, 35, 35, 0.87));
   color: white;
@@ -53,7 +50,6 @@ nav ul li a {
 .never h1 {
   font-size: 6rem;
 }
-
 .gle {
   background-color: rgba(36, 35, 35, 0.87);
   color: white;
@@ -86,7 +82,25 @@ nav ul li a {
   font-size: 3.5rem;
   text-align: center;
 }
+.gla {
+  background-color: rgba(36, 35, 35, 0.87);
+  height: auto;
+  text-align: center;
+  padding: 20px 10px;
+}
 
+.gla p {
+  padding-bottom: 26px;
+}
+
+.gla p a {
+  text-decoration: none;
+  color: aliceblue;
+  border-style: solid;
+  border-radius: 10px;
+  padding: 10px 20px;
+  display: inline-block;
+}
 .poto {
   background: linear-gradient(to bottom, rgba(36, 35, 35, 0.87), rgba(66, 41, 0, 0.788));
   color: white;
@@ -100,8 +114,8 @@ nav ul li a {
 
 .poto ul {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 30px;
   list-style: none;
   padding: 0;
@@ -109,12 +123,11 @@ nav ul li a {
 
 .poto ul li {
   text-align: center;
-  border: 1px solid white;
+  border-style: solid;
   border-radius: 30px;
   padding-bottom: 15px;
   max-width: 350px;
   width: 100%;
-  margin: auto;
   background-color: rgba(255, 255, 255, 0.05);
 }
 
@@ -132,7 +145,7 @@ nav ul li a {
 .poto ul li a {
   text-decoration: none;
   color: darkgrey;
-  border: 1px solid grey;
+  border-style: solid;
   border-radius: 8px;
   font-size: large;
   padding: 5px 15px;
@@ -140,20 +153,6 @@ nav ul li a {
   margin-top: 10px;
 }
 
-.gla {
-  background-color: rgba(36, 35, 35, 0.87);
-  text-align: center;
-  padding: 20px;
-}
-
-.gla p a {
-  text-decoration: none;
-  color: aliceblue;
-  border: 1px solid white;
-  border-radius: 10px;
-  padding: 8px 20px;
-  display: inline-block;
-}
 
 footer {
   background-color: rgba(66, 41, 0, 0.788);
@@ -164,17 +163,23 @@ footer {
 
 footer ul {
   list-style: none;
-  padding: 0;
-  margin: 20px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
+  padding: 0;
+  margin: 20px 0;
 }
 
 footer ul li a {
   text-decoration: none;
   color: blanchedalmond;
+}
+
+footer div {
+  max-width: 100%;
+  font-size: 1.2rem;
+  padding: 10px;
 }
 
 footer .koko, footer .koki {
@@ -183,7 +188,6 @@ footer .koko, footer .koki {
   margin-top: 20px;
 }
 
-/* 📱 استجابة للشاشات الصغيرة */
 @media (max-width: 768px) {
   nav ul {
     flex-direction: column;
@@ -242,8 +246,6 @@ footer .koko, footer .koki {
     font-size: 2rem;
   }
 }
-
-/* 📱 استجابة أصغر (هواتف تحت 480px) */
 @media (max-width: 480px) {
   .never h1 {
     font-size: 2.2rem;
@@ -264,4 +266,10 @@ footer .koko, footer .koki {
   footer .koko, footer .koki {
     font-size: 1.8rem;
   }
+
+  footer div {
+    font-size: 1rem;
+  }
 }
+
+ 
