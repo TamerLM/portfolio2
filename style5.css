@@ -6,7 +6,6 @@
   box-sizing: border-box;
   font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
 header {
   background-color: rgb(10, 10, 10);
   color: white;
@@ -15,35 +14,12 @@ header {
   flex-wrap: wrap;
   padding: 20px;
   align-items: center;
-  position: relative;
 }
 
 header img {
   max-width: 150px;
   height: auto;
 }
-
-.hamburger {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-  gap: 6px;
-  padding: 10px;
-  z-index: 1000;
-}
-
-.hamburger span {
-  width: 30px;
-  height: 3px;
-  background: white;
-  border-radius: 2px;
-  transition: 0.3s ease;
-}
-
-#menu-toggle {
-  display: none;
-}
-
 nav ul {
   list-style: none;
   display: flex;
@@ -59,53 +35,244 @@ nav ul li a {
   color: white;
   font-weight: bold;
 }
+.never {
+  background: linear-gradient(to bottom, rgb(10, 10, 10), rgba(36, 35, 35, 0.87));
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.never h2 {
+  font-size: 3.375rem;
+  margin-bottom: 20px;
+}
+
+.never h1 {
+  font-size: 6rem;
+}
+.gle {
+  background-color: rgba(36, 35, 35, 0.87);
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+  gap: 40px;
+}
+
+.gle .glc {
+  max-width: 600px;
+  padding: 20px;
+  font-size: 1rem;
+}
+
+.gle .glc p {
+  margin-bottom: 20px;
+}
+
+.gle img {
+  border-style: solid;
+  border-radius: 50px;
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+}
+
+.gle h1 {
+  font-size: 3.5rem;
+  text-align: center;
+}
+.gla {
+  background-color: rgba(36, 35, 35, 0.87);
+  height: auto;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.gla p {
+  padding-bottom: 26px;
+}
+
+.gla p a {
+  text-decoration: none;
+  color: aliceblue;
+  border-style: solid;
+  border-radius: 10px;
+  padding: 10px 20px;
+  display: inline-block;
+}
+.poto {
+  background: linear-gradient(to bottom, rgba(36, 35, 35, 0.87), rgba(66, 41, 0, 0.788));
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.poto h1 {
+  padding-bottom: 30px;
+}
+
+.poto ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+}
+
+.poto ul li {
+  text-align: center;
+  border-style: solid;
+  border-radius: 30px;
+  padding-bottom: 15px;
+  max-width: 350px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.poto ul li img {
+  border-radius: 30px;
+  width: 100%;
+  height: auto;
+}
+
+.poto ul li p {
+  margin-top: 15px;
+  font-size: 25px;
+}
+
+.poto ul li a {
+  text-decoration: none;
+  color: darkgrey;
+  border-style: solid;
+  border-radius: 8px;
+  font-size: large;
+  padding: 5px 15px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+
+footer {
+  background-color: rgba(66, 41, 0, 0.788);
+  color: white;
+  text-align: center;
+  padding: 30px 10px;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  margin: 20px 0;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: blanchedalmond;
+}
+
+footer div {
+  max-width: 100%;
+  font-size: 1.2rem;
+  padding: 10px;
+}
+
+footer .koko, footer .koki {
+  font-size: 40px;
+  color: black;
+  margin-top: 20px;
+}
 
 @media (max-width: 768px) {
-  .hamburger {
-    display: flex;
-  }
-
-  nav.nav-links {
-    display: none;
-    flex-direction: column;
-    background-color: #222;
-    width: 100%;
-    padding: 10px 0;
-    position: absolute;
-    top: 80px;
-    left: 0;
-    z-index: 999;
-  }
-
-  #menu-toggle:checked ~ nav.nav-links {
-    display: flex;
-  }
-
   nav ul {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding-top: 0;
-    gap: 0;
+    padding-top: 20px;
   }
 
-  nav ul li {
-    width: 100%;
+  .never h1 {
+    font-size: 3rem;
   }
 
-  nav ul li a {
-    display: block;
-    padding: 15px;
-    border-top: 1px solid #333;
-    width: 100%;
+  .never h2 {
+    font-size: 2rem;
+  }
+
+  .gle {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gle h1 {
+    font-size: 2rem;
+    padding-top: 20px;
+  }
+
+  .gle .glc {
+    max-width: 100%;
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .gle img {
+    max-width: 90%;
+  }
+
+  .poto ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .poto ul li {
+    width: 90%;
+  }
+
+  .poto ul li p {
+    font-size: 20px;
+  }
+
+  footer ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  footer .koko, footer .koki {
+    font-size: 2rem;
   }
 }
-
 @media (max-width: 480px) {
-  nav ul li a {
-    padding: 12px;
+  .never h1 {
+    font-size: 2.2rem;
+  }
+
+  .never h2 {
+    font-size: 1.5rem;
+  }
+
+  .gle h1 {
+    font-size: 1.8rem;
+  }
+
+  .poto ul li p {
+    font-size: 18px;
+  }
+
+  footer .koko, footer .koki {
+    font-size: 1.8rem;
+  }
+
+  footer div {
+    font-size: 1rem;
   }
 }
 
+  
+ 
 
  
